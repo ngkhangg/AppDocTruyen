@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa truyện"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#6200EE"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- EditText Tên truyện -->
+    <EditText
+        android:id="@+id/edtTenTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên truyện"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/ic_title"
+        android:drawablePadding="8dp"
+        android:inputType="text" />
+
+    <!-- EditText Chapter -->
+    <EditText
+        android:id="@+id/edtChap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chapter"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/ic_chapter"
+        android:drawablePadding="8dp"
+        android:inputType="text" />
+
+    <!-- EditText Link ảnh -->
+    <EditText
+        android:id="@+id/edtLinkAnh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Link ảnh"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/ic_image"
+        android:drawablePadding="8dp"
+        android:inputType="textUri" />
+
+    <!-- EditText Mô tả -->
+    <EditText
+        android:id="@+id/edtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:drawableStart="@drawable/ic_description"
+        android:drawablePadding="8dp"
+        android:inputType="textMultiLine"
+        android:lines="4" />
+
+    <!-- Nút Lưu -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:onClick="onSave"/>
+
+    <!-- Nút Quay lại -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        android:textColor="#6200EE"
+        android:backgroundTint="#E8EAF6"
+        android:padding="12dp"
+        android:elevation="2dp"
+        android:onClick="onBack"/>
+
+</LinearLayout>

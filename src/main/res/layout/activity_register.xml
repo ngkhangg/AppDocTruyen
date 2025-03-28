@@ -1,0 +1,84 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký tài khoản"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_edittext_rounded"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Mật khẩu -->
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edittext_rounded"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Xác nhận mật khẩu -->
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edittext_rounded"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Nút Đăng ký -->
+    <Button
+        android:id="@+id/btnSubmitRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E88E5"
+        android:padding="14dp"
+        android:textSize="16sp"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nút Quay lại -->
+    <Button
+        android:id="@+id/btnBackToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        android:textColor="#1E88E5"
+        android:backgroundTint="#E8EAF6"
+        android:padding="14dp"
+        android:textSize="16sp"
+        android:elevation="2dp" />
+
+</LinearLayout>
